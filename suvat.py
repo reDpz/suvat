@@ -1,12 +1,21 @@
+# import numpy
 class Suvat:
-    def __init__(self, **suvat):
-
-        # define filter
-        valid_keys = ['s','u','v','a','t']
-
-        # initial check to make sure all keys present
-        for key in suvat.items():
-            if key not in valid_keys:
-                raise TypeError('Invalid suvat key') # do something with keys here.
-Suvat(s = 3, u = 3, k =4)
+    def __init__(self, *, s=None, u=None, v=None, a=None, t=None):
+        self.suvat = {
+            's':s,
+            'u':u,
+            'v':v,
+            'a':a,
+            't':t
+            }
+        for index in self.suvat:
+            if index == None:
+                i +=1
+        if i>2:
+            print('Not enough suvat values')
+    
+    # take input and redirect to correct
+    def find(letter):
+        if letter = 's':
+            
         
